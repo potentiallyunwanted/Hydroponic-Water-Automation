@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watering Server</title>
+</head>
+<body>
+  <p> watering for {{ time[0] }} minutes</p>
+  <p> waiting for {{ time[1]}} minutes</p>
+<form action="updateWater">
+  <label>update watering time</label>
+  <input type="number" name="waterTime" value="{{ time[0] }}" required>
+  <label>update waiting time</label>
+  <input type="number" name="waitTime" value="{{ time[1] }}" required>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
